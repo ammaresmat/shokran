@@ -1,0 +1,1050 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* start of nav */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 5px 5px rgba(150, 149, 149, 0.6);
+    z-index: 999999;
+    background-color: white;
+}
+
+.nav .icon img {
+    width: 35px;
+    height: 35px;
+    padding: 20px 16px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    padding: 20px 16px;
+}
+
+.nav ul li {
+    padding: 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-left: 8px;
+}
+
+.nav ul .btn {
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 8px 20px;
+    border: 2px solid rgb(255,165,0);
+    font-weight: 600;
+    color: black;
+}
+
+.nav ul .btn i {
+    color: rgb(255,165,0);
+}
+
+.nav .bar-icon {
+    display: none;
+}
+
+/* end of nav */
+
+/* start of responsive nav */
+
+@media (max-width: 1200px) {
+    .nav {
+        padding: 0 13.5%;
+    }
+    
+    .nav ul {
+        min-width: 700px;
+    }
+} 
+
+@media (max-width: 992px) {
+    .nav{
+        padding: 0 10%;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .nav .bar-icon {
+        display: block;
+        padding-right: 30px;
+    }
+} 
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 0 3%;
+    }
+    
+    .nav .bar-icon {
+        padding: 0 30px;
+    }
+} 
+
+/* end of responsive nav */
+
+/* start of home */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+
+.home .container-one {
+    display: flex;
+    align-items: center;
+    margin: 0 0 48px;
+    padding: 0 18%;
+}
+
+.home .container-one .box {
+    width: 50%;
+}
+
+.home .container-one .box h1{
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 8px;
+}
+
+.home .container-one .box h2{
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(32, 32, 32, 0.6);
+    margin: 0 0 48px;
+    line-height: 1.5;
+}
+
+.home .container-one .box .btn {
+    background-color: rgb(255,165,0);
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 20px;
+    padding: 13px 30px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.home .container-one .box .btn:hover {
+    background-color: #209dd8;
+}
+
+.home .container-one .box img {
+    width: 100%;
+}
+
+.home .container-two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(243,245,250);
+    padding: 20px 16%;
+    margin: 0 0 48px;
+}
+
+.home .container-two .icons img {
+    width: 90px;
+    padding: 0px 15px;
+    filter: grayscale(100);
+    transition: all 0.5s;
+}
+
+.home .container-two .icons img:hover {
+    filter: grayscale(0);
+    transform: scale(1.2, 1.2);
+}
+
+/* end of home */
+
+/* start of responsive home */
+
+@media (max-width: 1200px) {
+    .home .container-one{
+        padding: 0 13.5%;
+    }
+    .home .container-two{
+        padding: 20px 13.5%;
+    }
+} 
+
+@media (max-width: 992px) {
+    .home .container-one {
+        width: 70%;
+        flex-direction: column-reverse;
+    }
+    
+    .home .container-one .box {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .home .container-one .box img{
+        max-width: 468px;
+    }
+    
+    .home .container-two {
+        padding: 20px 10%;
+        max-width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .home .container-two .icons{
+        width: 30%;
+        text-align: center;
+        margin: 24px 0 ;
+    }
+} 
+
+@media (max-width: 768px) {
+    .home .container-one {
+        padding: 0 5%;
+        margin: auto;
+        margin-bottom: 48px;
+    }
+    
+    .home .container-one .box h1 {
+        font-size: 32px;
+    } 
+    
+    .home .container-one .box h2 {
+        font-size: 16px;
+    }
+    
+    .home .container-two .icons{
+        width: 52%;
+    }
+} 
+
+@media (max-width: 576px) {
+    .home .container-one {
+        width: 100%;
+        padding: 0 0%;
+    }
+} 
+
+/* end of responsive home */
+
+/* start of using */
+
+.using {
+    padding-top: 60px;
+    margin-bottom: 0 0 48px;
+}
+
+.using .title {
+    margin: 0 0 48px;
+}
+
+.using .title h2 {
+    position: relative;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    color: rgb(55,81,126);
+    font-size: 32px;
+    text-align: center;
+    margin: 48px 0 8px;
+    padding: 0 0 16px;
+}
+
+.using .title h2::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: calc(50% - 50px);
+    width: 113px;
+    height: 2px;
+    background-color: rgb(221,221,221);
+}
+
+.using .title h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 20px);
+    width: 50px;
+    height: 4px;
+    background-color: rgb(255,165,0);
+}
+
+.using .container {
+    display: flex;
+    justify-content: center;
+}
+
+.using .container div {
+    width: 30%;
+    padding: 0 15px;
+}
+
+.using .container .img {
+    text-align: center;
+}
+
+.using .container .img img{
+    width: 100%;
+}
+
+.using .container .box p {
+    color: rgb(68,68,68);
+    font-family: sans-serif;
+    margin: 0 0 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.using .container .box .btn {
+    border: 2px solid rgb(255,165,0);
+    color: rgb(255,165,0);
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.using .container .box .btn:hover {
+    background-color: #ffa500;
+    color: white;
+}
+
+/* end of using */
+
+/* start of responsive using */
+
+@media (max-width: 1200px) {
+    .using .container div {
+        width: 35%;
+    }
+} 
+
+@media (max-width: 992px) {
+    .using .container {
+        flex-wrap: wrap;
+    }
+
+    .using .container div {
+        width: 82.5%;
+    }
+
+    .using .container .img {
+        margin-bottom: 20px;
+    }
+} 
+
+@media (max-width: 768px) {
+    .using .container div {
+        width: 95%;
+        text-align: center;
+    }
+}
+
+/* start of responsive using */
+
+/* start of about */
+
+.about {
+    padding-top: 60px;
+    margin-bottom: 96px;
+}
+
+.about .title {
+    margin: 0 0 48px;
+}
+
+.about .title h2 {
+    position: relative;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    color: rgb(55,81,126);
+    font-size: 32px;
+    text-align: center;
+    margin: 48px 0 8px;
+    padding: 0 0 16px;
+}
+
+.about .title h2::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: calc(50% - 50px);
+    width: 113px;
+    height: 2px;
+    background-color: rgb(221,221,221);
+}
+
+.about .title h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 20px);
+    width: 50px;
+    height: 4px;
+    background-color: rgb(255,165,0);
+}
+
+.about .container {
+    display: flex;
+    justify-content: center;
+}
+
+.about .container .box {
+    width: 30%;
+    padding: 0 15px;
+}
+
+.about .container .box p{
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.about .container .box ul {
+    list-style: none;
+}
+
+.about .container .box ul li {
+    margin-bottom: 16px;
+}
+
+.about .container .box ul li i {
+    color: rgb(255,165,0);
+}
+
+.about .container .box .btn {
+    border: 2px solid rgb(255,165,0);
+    color: rgb(255,165,0);
+    border-radius: 5px;
+    padding: 8px 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.about .container .box .btn:hover {
+    background-color: #ffa500;
+    color: white;
+}
+
+/* end of about */
+
+/* start of responsive about */
+
+@media (max-width: 1200px) {
+    .about .container .box{
+        width: 35%;
+    }
+} 
+
+@media (max-width: 992px) {
+    .about .container {
+        flex-wrap: wrap;
+    }
+    
+    .about .container .box {
+        width: 82.5%;
+        margin-bottom: 48px;
+    }
+    
+    .about .container .img {
+        margin-bottom: 20px;
+    }
+} 
+
+@media (max-width: 768px) {
+    .about .container .box {
+        width: 95%;
+    }
+
+    .about .container .bx-1 {
+        text-align: center;
+    }
+} 
+
+/* end of responsive about */
+
+/* start of Categories */
+
+.categories {
+    padding-top: 60px;
+    margin-bottom: 0 0 48px;
+    background-color: rgb(243,245,250);
+    padding-bottom: 48px;
+}
+
+.categories .title {
+    margin: 0 0 48px;
+}
+
+.categories .title h2 {
+    position: relative;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    color: rgb(55,81,126);
+    font-size: 32px;
+    text-align: center;
+    margin: 48px 0 8px;
+    padding: 0 0 16px;
+}
+
+.categories .title h2::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: calc(50% - 50px);
+    width: 113px;
+    height: 2px;
+    background-color: rgb(221,221,221);
+}
+
+.categories .title h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 20px);
+    width: 50px;
+    height: 4px;
+    background-color: rgb(255,165,0);
+}
+
+.categories .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 67%;
+    justify-content: center;
+    margin: auto;
+}
+
+.categories .container .item {
+    height: 250px;
+    width: 30%;
+    transition: all 0.5s;
+    position: relative;
+    margin: 8px;
+}
+
+.categories .container .item:hover {
+    transform: translateY(-12px);
+}
+
+.categories .container .item img{
+    height: 100%;
+    width: 100%;
+}
+
+.categories .container .item h4 {
+    background-color: rgb(255,165,0);
+    width: 100%;
+    top: 48px;
+    position: absolute;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.categories .container .item h4 a {
+    text-decoration: none;
+    font-family: 'Amiri', serif;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+}
+
+/* end of Categories */
+
+/* start of responsive Categories */
+
+@media (max-width: 1200px) {
+    .categories .container {
+        width: 79%;
+    }
+} 
+
+@media (max-width: 992px) {
+    .categories .container {
+        width: 90%;
+    }
+
+    .categories .container .item {
+        width: 45%;
+    }
+} 
+
+@media (max-width: 768px) {
+    .categories .container {
+        width: 80%;
+    }
+
+    .categories .container .item {
+        width: 70%;
+    }
+} 
+
+@media (max-width: 576px) {
+    .categories .container {
+        width: 90%;
+    }
+
+    .categories .container .item {
+        width: 90%;
+    }
+} 
+
+/* end of responsive Categories */
+
+/* start of brands */
+
+.brands {
+    padding-top: 60px;
+    margin-bottom: 48px;
+    background-color: rgb(243,245,250);
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brands .title {
+    margin: 0 0 16px;
+}
+
+.brands .title h2 {
+    position: relative;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    color: rgb(55,81,126);
+    font-size: 32px;
+    text-align: center;
+    margin: 48px 0 8px;
+    padding: 0 0 16px;
+}
+
+.brands .title h2::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: calc(50% - 50px);
+    width: 113px;
+    height: 2px;
+    background-color: rgb(221,221,221);
+}
+
+.brands .title h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 20px);
+    width: 50px;
+    height: 4px;
+    background-color: rgb(255,165,0);
+}
+
+.brands .description p{
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    line-height: 1.5;
+    color: rgb(68,68,68);
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.brands .box {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.brands .box .item {
+    margin: 0 60px;
+    width: 25%;
+}
+
+.brands .box .item img{
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* end of brands */
+
+/* start of responsive brands */
+
+@media (max-width: 1200px) {
+    .brands .box {
+        width: 78%;
+    }
+
+    .brands .box .item {
+        margin: 0 15px;
+        width: 33%;
+    }
+    
+} 
+
+@media (max-width: 992px) {
+    .brands .box {
+        flex-wrap: wrap;
+    }
+
+    .brands .box .item {
+        width: 45%;
+        margin: 12px 30px;
+        max-height: 450px;
+    }
+
+    .brands .description p{
+        width: 82.5%;
+    }
+} 
+
+@media (max-width: 768px) {
+    .brands .box .item {
+        width: 75%;
+    }
+} 
+
+@media (max-width: 576px) {
+    .brands .box .item {
+        width: 90%;
+    }
+} 
+
+
+/* end of responsive brands */
+
+/* start of contact */
+
+.contact {
+    padding-top: 60px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .title {
+    margin: 0 0 16px;
+}
+
+.contact .title h2 {
+    position: relative;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    color: rgb(55,81,126);
+    font-size: 32px;
+    text-align: center;
+    margin: 48px 0 8px;
+    padding: 0 0 16px;
+}
+
+.contact .title h2::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: calc(50% - 50px);
+    width: 113px;
+    height: 2px;
+    background-color: rgb(221,221,221);
+}
+
+.contact .title h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 20px);
+    width: 50px;
+    height: 4px;
+    background-color: rgb(255,165,0);
+}
+
+.contact .description p{
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    line-height: 1.5;
+    color: rgb(68,68,68);
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 0 48px;
+    padding: 0 0 48px;
+}
+
+.contact .container .box {
+    width: 45%;
+    margin: 0 20px;
+}
+
+.contact .container .form {
+    border-top: 3px solid rgb(255,165,0);
+    border-bottom: 3px solid rgb(255,165,0);
+    box-shadow: 0px 0px 20px rgba(32, 32, 32, 0.4);
+    padding: 0 15px;
+}
+
+.contact .container .box img {
+    width: 100%;
+}
+
+.contact .container .box form {
+    padding: 16px 0;
+}
+
+.contact .container .box form .contain {
+    display: flex;
+}
+
+.contact .container .box form .contain .details {
+    padding: 0 15px 16px;
+    width: 50%;
+}
+
+.contact .container .box form .contain .details label{
+    margin: 0 0 8px;
+    padding-bottom: 4px;
+    display: block;
+}
+
+.contact .container .box form .contain .details input{
+    display: block;
+    height: 28px;
+    width: 100%;
+}
+
+.contact .container .box form .details {
+    padding: 0 15px 16px;
+}
+
+.contact .container .box form .details label {
+    margin: 0 0 8px;
+    padding-bottom: 4px;
+    display: block;
+}
+
+
+.contact .container .box form .btn {
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.contact .container .box form .details button {
+    background-color: rgb(255,165,0);
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    width: 33%;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+.contact .social {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+
+.contact .social h4 {
+    padding:  0 15px;
+    margin-bottom: 8px;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    color: rgb(55,81,126);
+    font-size: 16px;
+}
+
+.contact .social p{
+    margin-bottom: 16px;
+    padding: 0 15px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgb(68,68,68);
+}
+
+.contact .social .accounts {
+    padding: 0 15px;
+}
+
+.contact .social .accounts a {
+    background-color: rgb(255,165,0);
+    display: inline-block;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    padding: 7px 7px;
+    margin-right: 3px;
+    line-height: 1.5;
+}
+
+/* end of contact */
+
+/* start of responsive contact */
+
+@media (max-width: 1200px) {
+    .contact .container {
+        width: 78%;
+    }
+
+    .contact .social {
+        width: 78%;
+    }
+} 
+
+@media (max-width: 992px) {
+    .contact .description p {
+        width: 82.5%;
+    }
+
+    .contact .container {
+        width: 85%;
+    }
+
+    .contact .social {
+        width: 85%;
+    }
+} 
+
+@media (max-width: 768px) {
+    .contact .container {
+        flex-wrap: wrap;
+        width: 96%;
+    }
+
+    .contact .container .box {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .contact .container .box form .contain {
+        flex-wrap: wrap;
+    }
+    
+    .contact .container .box form .contain .details {
+        width: 100%;
+    }
+
+    .contact .social {
+        width: 98%;
+    }
+} 
+
+@media (max-width: 576px) {
+    .contact .container .box form .details button {
+        width: 65%;
+    }
+}
+
+/* end of responsive contact */
+
+
+/* start of footer */
+
+.footer {
+    background-color: rgb(55,81,126);
+    color: white;
+}
+
+.footer .container {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 48px 0;
+    justify-content: space-between;
+}
+
+.footer .container div {
+    width: 40%;
+}
+
+.footer .container .box-1 {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer .container .box-2 {
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+.footer .container .box-2 p a {
+    color: rgb(255,165,0);    
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* end of footer */
+
+/* start of responsive footer */
+
+@media (max-width: 1200px) {
+    .footer .container {
+        width: 78%;
+    }
+} 
+
+@media (max-width: 992px) {
+    .footer .container {
+        width:85%;
+    }
+} 
+
+@media (max-width: 768px) {
+    .footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer .container div {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .footer .container .box-1 {
+        margin-bottom: 48px;
+    }
+} 
+
+@media (max-width: 576px) {
+
+} 
+
+/* end of responsive footer */
